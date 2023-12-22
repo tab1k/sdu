@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+{% load static %}
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<title>Student Information System</title>
+<link rel="stylesheet" href="{% static 'users/css/all.css' %}">
+<link rel="icon" href="{% static 'users/favicon.ico' %}" type="image/png">
+</head>
+<body style="padding:0; margin:0; font-family:Arial, Helvetica, sans-serif">
+
+<div align="center">
+
+<div style="max-width:960px !important; padding-top:2px">
+
+<table border="0" width="100%" style="max-width:960px !important" align="center">
+
+	<tbody><tr>
+
+    	<td colspan="2">
+
+        <table width="100%" style="height:100%">
+
+        	<tbody><tr>
+
+            	<td align="left" width="200"><a href="http://sdu.edu.kz/"><img src="{% static 'users/images/sdu_logo.png' %}" alt="ads" height="114" title="Suleyman Demirel University"></a></td>
+
+                <td>
+
+					<table width="100%" style="height:100%">
+
+                    	<tbody><tr>
+
+                        	<td nowrap="">
+
+                                <div style="color:#00B3DF; padding-left:2px">
+
+
+                                <div style="font-size:16px;">Student Information System</div>
+                               							   <div class="leftLinks" style="font-size: 16px;width:145px; background-color: #00B3DF;border: 1px; margin-top: 10px">
+							   		<img src="{% static 'users/images/book_icon.png' %}" border="0" style="margin:3px; margin-top:4px">
+									<a style="color:white" href="common/download/handbook.pdf" target="_blank">Portal Guideline</a>
+							   </div>
+
+                            </div>
+
+                            </td>
+
+                            <td>
+
+
+                                <table class="clsTbl" style="font-size:11px !important">
+
+                                	<tbody><tr>
+
+                                    	<td class="clsTdInfo" align="right" style="color:#333">Name Surname : </td>
+
+                                    	<td class="clsTdInfo" style="color:#333">Tabigat Karbayev</td>
+
+                                    </tr>
+
+                                	<tr>
+
+                                    	<td class="clsTdInfo" align="right" style="color:#333">&nbsp;Advisor : </td>
+
+                                    	<td class="clsTdInfo" style="color:#333">Мустафа Абдулбакиоглы</td>
+
+                                    </tr>
+
+                                	<tr>
+
+                                    	<td class="clsTdInfo" align="right" style="color:#333">&nbsp;Major Program : </td>
+
+                                    	<td class="clsTdInfo" style="color:#333">Физика-Информатика-EN / 2019</td>
+
+                                    </tr>
+
+                                	<tr>
+
+                                    	<td class="clsTdInfo" align="right" style="color:#333">&nbsp;Last Login Date : </td>
+
+                                    	<td class="clsTdInfo" style="color:#333">22-DEC-23</td>
+
+                                    </tr>
+
+                                	<tr>
+
+                                    	<td class="clsTdInfo" align="right" style="color:#333">Last Login IP : </td>
+
+                                    	<td class="clsTdInfo" style="color:#333">95.82.126.213</td>
+
+                                    </tr>
+
+                                	<tr>
+
+                                    	<td class="clsTdInfo" align="right" style="color:#333">System Date : </td>
+
+                                    	<td class="clsTdInfo" style="color:#333">22 Dec 2023 17:41 pm</td>
+
+                                    </tr>
+
+                                </tbody></table>
+
+
+                            </td>
+
+                        </tr>
+
+                    </tbody></table>
+
+                </td>
+
+                <td width="90" align="right">
+
+
+
+                <img src="{% static 'users/images/stud_photo.jpg' %}" alt="Student" height="120" style="border-radius:5%;-webkit-border-radius: 5%px;-moz-border-radius: 5%px" title="190317023"></td>
+
+            </tr>
+
+        </tbody></table>
+
+        </td>
+
+    </tr>
+
+    <tr>
+
+    	<td width="200" valign="top" align="left" style="min-width:200px">
+
+        	<div style="margin-top:50px">
+
+            <div class="leftLinks" style="margin-bottom:10px; vertical-align:top">
+            	<img src="{% static 'users/images/home.png' %}" style="margin:3px"> &nbsp;
+        		<a style="color:inherit" href="{% url 'portal:home' %}">Home page</a>
+        	</div>
+
+            <div class="leftLinkGr">Academic Operations</div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/note.ico' %}">&nbsp;<a style="color:inherit" href="?mod=cr">Consent Requests </a></div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/ico_register.gif' %}">&nbsp;<a style="color:inherit" href="?mod=course_reg">Course Registration </a></div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/wishlist.png' %}">&nbsp;<a style="color:inherit" href="?mod=wishList">Wish list </a></div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/grade_icon.png' %}">&nbsp;<a style="color:inherit" href="?mod=wd">Withdrawals </a></div><br><div class="leftLinkGr">Information</div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/ico_deps.png' %}">&nbsp;<a style="color:inherit" href="?mod=viewdeps">Curricula </a></div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/ico_list.png' %}">&nbsp;<a style="color:inherit" href="?mod=course_struct">My Curriculum </a></div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/mirror_icon.png' %}">&nbsp;<a style="color:inherit" href="?mod=transkript">Transcript </a></div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/marks_icon.png' %}">&nbsp;<a style="color:inherit" href="{% url 'portal:grades' %}">Grades List </a></div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/calendarDefault.png' %}">&nbsp;<a style="color:inherit" href="?mod=schedule">Course Schedule </a></div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/dollar.png' %}">&nbsp;<a style="color:inherit" href="?mod=ai">Accounting Info </a></div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/journal_icon.png' %}">&nbsp;<a style="color:inherit" href="?mod=ejurnal">Electronic Attendance </a></div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/ico_sched_cri.png' %}">&nbsp;<a style="color:inherit" href="?mod=calendar">System Calendar </a></div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/entr_icon.png' %}">&nbsp;<a style="color:inherit" href="?mod=card">Gate Entry Records </a></div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/rule.png' %}">&nbsp;<a style="color:inherit" href="?mod=rules">Rules and Regulations </a></div><br><div class="leftLinkGr">Services</div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/msg16.png' %}">&nbsp;<a style="color:inherit" href="?mod=msg">Messages </a></div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/statistics-icon.png' %}">&nbsp;<a style="color:inherit" href="?mod=anket">Questionnaires </a></div><div class="leftLinks">
+
+                		 <img style="margin-top:6px" src="{% static 'users/images/gmail.jpg' %}">&nbsp;<a style="color:inherit" target="_blank" href="http://mail.sdu.edu.kz/">SduMail </a></div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/globe%20red.png' %}">&nbsp;<a style="color:inherit" href="?mod=onlserv">Online Services </a></div><br><div class="leftLinkGr">Profile</div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/settings_icon.png' %}">&nbsp;<a style="color:inherit" href="?mod=settings">Settings </a></div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/stud_icon.png' %}">&nbsp;<a style="color:inherit" href="?mod=profile">My Profile </a></div>
+            <div>&nbsp;</div>
+
+
+			<div class="leftLinks">
+	            <img height="16" style="margin-top:3px" src="{% static 'users/images/lock_icon.png' %}">&nbsp;
+	            <a style="color:inherit" href="logout.php">[ Sign out ]</a>
+            </div>
+
+        </div></td>
+
+        <td valign="top" align="left">
+
+        <div class="ajaxMsjDiv"><span id="ajaxLoading" class="ajaxMsj" style="background-color: rgb(249, 253, 255); color: rgb(0, 128, 192); font-weight: bold; display: none;"></span>&nbsp;</div>
+
+        <div id="divModule" style="padding-left:4px">
+
+        <div class="modTitle">Grades List</div>
+
+
+<div class="modContent">
+<br>
+	<label>Year and term:</label>&nbsp;
+	<select id="ysem" onchange="GetGrades();">
+		<option value="1#1">Select all</option>
+		<option value="2019#1">(2019 - 2020) 1.Term</option><option value="2019#2">(2019 - 2020) 2.Term</option><option value="2020#1">(2020 - 2021) 1.Term</option><option value="2020#2">(2020 - 2021) 2.Term</option><option value="2021#1">(2021 - 2022) 1.Term</option><option value="2021#2">(2021 - 2022) 2.Term</option><option value="2022#1">(2022 - 2023) 1.Term</option><option value="2022#2">(2022 - 2023) 2.Term</option><option value="2023#1" selected="">(2023 - 2024) 1.Term</option>	</select>&nbsp;<input type="button" onclick="GetGrades(); return false;" value="Show">
+	<div id="divShowStudGrades" style="display: block;">			<style type="text/css">
+				.alignleft{
+	text-align: left !important;
+}
+.csrow{
+	background: none;
+	cursor: pointer;
+}
+.active td:nth-child(-n+7), .csrow:hover td:nth-child(-n+7){
+	background: lightgrey !important;
+}
+.hidden{
+	display: none;
+}
+.disabled{
+	background-color: #F7F7F7;
+	color: #999999;
+}
+.thtext{
+	color: #CC4200;
+}
+.smalltxt{
+	font-size: 8px;
+}
+.ctbl{
+    width: 100%;
+    font-family: arial,sans-serif;
+    border-collapse: collapse;
+    margin: 0px;
+    border-color: #0000BB;
+    background-color: white;
+}
+.crtd {
+    border: 1px solid #ddd;
+    padding: 0px 4px;
+    margin: 0px;
+    font-size: 12px;
+    vertical-align: middle;
+    height: 26px;
+    text-align: center;
+}
+.chtd {
+    border: 1px solid #ddd;
+    padding: 6px 4px;
+    margin: 0px;
+    font-size: 12px;
+    vertical-align: middle;
+    text-align: center;
+}
+.last {
+    padding: 0px;
+    empty-cells: hide;
+}
+.plus:before {
+	content: '\25BA';
+	color: #005cb9;
+	font-weight: bold;
+	float: left;
+}
+.plusactive:before {
+	content: '\25BC';
+}
+.infobut{
+	border: none;
+	background: none;
+	color: black;
+	padding: 0px;
+	cursor: default;
+}			</style>
+			<script>
+				function toggleVisibility(obj){
+					obj.classList.toggle("active");
+					obj.nextElementSibling.classList.toggle("hidden");
+					t = obj.getElementsByClassName("plus");
+					if(t == "undefined" || t.length == "undefined" || t.length < 1) return;
+					for (i = 0; i < t.length; i++) {
+						t[i].classList.toggle("plusactive");
+					}
+				}
+			</script>
+
+
+				<table id="coursesTable" cellspacing="0" class="ctbl">
+				<tbody><tr height="30px">
+					<td class="thtext" colspan="7">
+						<b>
+						2023-2024 1. term
+						</b>
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="chtd" width="70">
+						Code					</td>
+	                <td rowspan="2" class="chtd">
+	                	Course name	                </td>
+	                <td rowspan="2" class="chtd" width="60" title="Credits">
+	                	Credits	                </td>
+					<td rowspan="2" class="chtd" width="25">ECTS					</td>
+					<td rowspan="2" class="chtd" width="25" title="Absence Rate">
+						Absence					</td>
+					<td rowspan="2" class="chtd" width="25" title="Total Grade">
+						Total					</td>
+	            	<td rowspan="2" class="chtd" width="25" title="Letter Grade">
+	            		Letter Grade	            	</td>
+
+	            		<td colspan="2" class="chtd last">Resit Exam Application</td>	            </tr>
+	            <tr>
+
+	            		<td width="1" class="chtd last">RE1</td>
+	            		<td width="1" class="chtd last">RE2</td>
+				</tr>
+									<tr class="csrow ">
+						<td onclick="toggleVisibility(this.parentNode)" class="crtd">
+							<div class="plus"></div>
+							<div>PED 347</div>
+							<div class="smalltxt"></div>
+						</td>
+						<td onclick="toggleVisibility(this.parentNode)" class="crtd alignleft">Electricity and magnetism</td>
+						<td onclick="toggleVisibility(this.parentNode)" class="crtd">4</td>
+						<td onclick="toggleVisibility(this.parentNode)" class="crtd">6</td>
+						<td onclick="toggleVisibility(this.parentNode)" class="crtd">20&nbsp;%</td>
+						<td onclick="toggleVisibility(this.parentNode)" class="crtd">100</td>
+						<td onclick="toggleVisibility(this.parentNode)" class="crtd">A</td>
+															<td class="crtd last" nowrap="">
+																</td>
+															<td class="crtd last" nowrap="">
+												</td>
+											</tr>
+					<tr class="hidden">
+						<td colspan="7">
+											<table class="ctbl">
+							<tbody><tr>
+														<td valign="top">
+									<table class="ctbl">
+										<tbody><tr>
+											<th colspan="3" class="chtd">
+												Section: 01 - Theory (N)											</th>
+										</tr>
+										<tr>
+											<th colspan="3" class="chtd">
+												Instructor: Mustafa Abdulbakiogly											</th>
+										</tr>
+																		<tr>
+											<td class="crtd" width="100px">
+												Assesment											</td>
+											<td class="crtd">
+												Grades											</td>
+											<td class="crtd">
+												Average											</td>
+										</tr>
+																		<tr>
+											<td class="crtd">
+												FIN												(40/100)
+											</td>
+											<td class="crtd">
+																							</td>
+											<td class="crtd">
+																							</td>
+										</tr>
+																		<tr>
+											<td class="crtd">
+												PF												(60/100)
+											</td>
+											<td class="crtd">
+																							</td>
+											<td class="crtd">
+																							</td>
+										</tr>
+																			<tr>
+												<th class="crtd">
+													Total												</th>
+												<th colspan="2" class="crtd">
+													0												</th>
+											</tr>
+																		</tbody></table>
+									</td>
+														<td valign="top">
+									<table class="ctbl">
+										<tbody><tr>
+											<th colspan="3" class="chtd">
+												Section: 02 - Practice (P)											</th>
+										</tr>
+										<tr>
+											<th colspan="3" class="chtd">
+												Instructor: Nazarali Aitjanov											</th>
+										</tr>
+																			<tr>
+												<td class="crtd" colspan="3">
+												There are no assessments in this section												</td>
+											</tr>
+																	</tbody></table>
+									</td>
+															</tr>
+								</tbody></table>
+											</td>
+					</tr>
+									</tbody></table>
+				</div>
+</div>
+
+<script>
+	function GetGrades() {
+		var id = document.getElementById("ysem").value;
+		ShowAjaxLoadImage();
+		Ajax.ajax({url : 'index.php?ajx=1&mod=grades&action=GetGrades&yt=' + id, method : 'POST', callback : cb_GetGrades });
+	}
+
+	function cb_GetGrades(res) {
+		if(res.state == 4 && res.status == 200) {
+			resAr = JSON.parse(res.data);
+			var cnt = document.getElementById("divShowStudGrades");
+			cnt.style.display = 'block';
+			HideAjaxLoadImage();
+			if(resAr["CODE"] == 1) {
+				cnt.innerHTML = resAr["DATA"];
+				assignDeadlines();
+			}
+			else if(resAr["CODE"] < 0) {
+				alert(resAr["DATA"]);
+			}
+		}
+	}
+
+	function applyForExam(obj,cour,sect,asses){
+		if(confirm("This operation is paid. If you press OK your application will be accepted and you will be charged by 1 credit amount.\nAre you sure to continue?\nCredit Fee = 17000 KZT")){
+			obj.disabled = 1;
+			ShowAjaxLoadImage();
+			Ajax.ajax({url : 'index.php?ajx=1&mod=grades&action=applyForExam&cour=' + cour + '&sect=' + sect + '&asses=' + asses, method : 'POST', callback : function(res){cb_applyForExam(res,obj)} });
+		}
+	}
+
+	function cb_applyForExam(res,obj) {
+		if(res.state == 4 && res.status == 200) {
+			resAr = JSON.parse(res.data);
+			HideAjaxLoadImage();
+			if(resAr["CODE"] < 0) {
+				alert(resAr["DATA"]);
+				obj.disabled = 0;
+			}
+			GetGrades();
+		}
+	}
+
+	function cancelExamRequest(obj,cour,sect,asses){
+		obj.disabled = 1;
+		ShowAjaxLoadImage();
+		Ajax.ajax({url : 'index.php?ajx=1&mod=grades&action=cancelExamRequest&cour=' + cour + '&sect=' + sect + '&asses=' + asses, method : 'POST', callback : function(res){cb_applyForExam(res,obj)} });
+	}
+
+	function cb_cancelExamRequest(res,obj) {
+		if(res.state == 4 && res.status == 200) {
+			resAr = JSON.parse(res.data);
+			HideAjaxLoadImage();
+			if(resAr["CODE"] < 0) {
+				alert(resAr["DATA"]);
+				obj.disabled = 0;
+			}
+			GetGrades();
+		}
+	}
+
+	function assignDeadlines(){
+		buts = document.getElementsByName("buts");
+		for (var i = 0; i < buts.length; i++) {
+			time = buts[i].value;
+			countDown(buts[i],time);
+		}
+	}
+
+	function countDown(obj, time){
+		if(!obj || !time) return;
+		var countDownDate = new Date().getTime() + time*1000;
+		if(isNaN(countDownDate)){
+			obj.parentNode.removeChild(obj);
+			return;
+		}
+		function countOnce(){
+			var now = new Date().getTime();
+			var distance = countDownDate - now;
+			if (distance < 0) {
+				clearInterval(x);
+				var po = obj.parentNode;
+				po.removeChild(obj);
+				po.innerHTML="Expired";
+				return;
+			}
+			var hours = Math.floor((distance /*% (1000 * 60 * 60 * 24)*/) / (1000 * 60 * 60));
+			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+			if(minutes < 10) minutes = "0" + minutes;
+			if(seconds < 10) seconds = "0" + seconds;
+			if(hours>48) {
+				clearInterval(x);
+				msg = Math.floor(hours/24) + "&nbsp;days"+ "&nbsp;left";
+			} else{
+				msg = "Last:&nbsp;" + hours + ":" + minutes + ":" + seconds;
+			}
+			obj.innerHTML = msg;
+		}
+		countOnce();
+		var x = setInterval(countOnce, 1000);
+	}
+
+	GetGrades();
+
+</script>
+        </div>
+
+        </td>
+
+    </tr>
+
+    <tr>
+
+    	<td></td>
+
+        <td>
+
+            <div style="padding-top:100px; clear:both; text-align:right; width:100%; margin-top:10px">
+
+            <div style="padding:4px 20px; border-top:1px solid #eee; color:#999; text-align:right">Suleyman Demirel University © 2018-2019</div>
+
+            </div>
+
+        </td>
+
+    </tr>
+
+</tbody></table>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

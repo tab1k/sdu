@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+{% load static %}
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<title>Student Information System</title>
+<link rel="stylesheet" href="{% static 'users/css/all.css' %}">
+<link rel="icon" href="{% static 'users/favicon.ico' %}" type="image/png">
+</head>
+<body style="padding:0; margin:0; font-family:Arial, Helvetica, sans-serif">
+
+<div align="center">
+
+<div style="max-width:960px !important; padding-top:2px">
+
+<table border="0" width="100%" style="max-width:960px !important" align="center">
+
+	<tbody>
+    <tr>
+
+    	<td colspan="2">
+
+        <table width="100%" style="height:100%">
+
+        	<tbody><tr>
+
+            	<td align="left" width="200"><a href="http://sdu.edu.kz/"><img src="{% static 'users/images/sdu_logo.png' %}" alt="ads" height="114" title="Suleyman Demirel University"></a></td>
+
+                <td>
+
+					<table width="100%" style="height:100%">
+
+                    	<tbody><tr>
+
+                        	<td nowrap="">
+
+                                <div style="color:#00B3DF; padding-left:2px">
+
+
+                                <div style="font-size:16px;">Student Information System</div>
+                               							   <div class="leftLinks" style="font-size: 16px;width:145px; background-color: #00B3DF;border: 1px; margin-top: 10px">
+							   		<img src="{% static 'users/images/book_icon.png' %}" border="0" style="margin:3px; margin-top:4px">
+									<a style="color:white" href="common/download/handbook.pdf" target="_blank">Portal Guideline</a>
+							   </div>
+
+                            </div>
+
+                            </td>
+
+                            <td>
+
+                            &nbsp;
+                            </td>
+
+                        </tr>
+
+                    </tbody></table>
+
+                </td>
+
+                <td width="90" align="right">
+
+                &nbsp;</td>
+
+            </tr>
+
+        </tbody></table>
+
+        </td>
+
+    </tr>
+
+    <tr>
+
+    	<td width="200" valign="top" align="left" style="min-width:200px">
+
+        	<div style="margin-top:50px">
+
+            <div class="leftLinks" style="margin-bottom:10px; vertical-align:top">
+            	<img src="{% static 'users/images/home.png' %}" style="margin:3px"> &nbsp;
+        		<a style="color:inherit" href="{% url 'portal:home' %}">Home page</a>
+        	</div>
+
+            <div class="leftLinkGr">Academic Operations</div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/note.ico' %}">&nbsp;<a style="color:inherit" href="?mod=cr">Consent Requests </a></div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/ico_register.gif' %}">&nbsp;<a style="color:inherit" href="?mod=course_reg">Course Registration </a></div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/wishlist.png' %}">&nbsp;<a style="color:inherit" href="?mod=wishList">Wish list </a></div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/grade_icon.png' %}">&nbsp;<a style="color:inherit" href="?mod=wd">Withdrawals </a></div><br><div class="leftLinkGr">Information</div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/ico_deps.png' %}">&nbsp;<a style="color:inherit" href="?mod=viewdeps">Curricula </a></div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/ico_list.png' %}">&nbsp;<a style="color:inherit" href="?mod=course_struct">My Curriculum </a></div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/mirror_icon.png' %}">&nbsp;<a style="color:inherit" href="?mod=transkript">Transcript </a></div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/marks_icon.png' %}">&nbsp;<a style="color:inherit" href="{% url 'portal:grades' %}">Grades List </a></div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/calendarDefault.png' %}">&nbsp;<a style="color:inherit" href="?mod=schedule">Course Schedule </a></div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/dollar.png' %}">&nbsp;<a style="color:inherit" href="?mod=ai">Accounting Info </a></div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/journal_icon.png' %}">&nbsp;<a style="color:inherit" href="?mod=ejurnal">Electronic Attendance </a></div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/ico_sched_cri.png' %}">&nbsp;<a style="color:inherit" href="?mod=calendar">System Calendar </a></div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/entr_icon.png' %}">&nbsp;<a style="color:inherit" href="?mod=card">Gate Entry Records </a></div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/rule.png' %}">&nbsp;<a style="color:inherit" href="?mod=rules">Rules and Regulations </a></div><br><div class="leftLinkGr">Services</div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/msg16.png' %}">&nbsp;<a style="color:inherit" href="?mod=msg">Messages </a></div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/statistics-icon.png' %}">&nbsp;<a style="color:inherit" href="?mod=anket">Questionnaires </a></div><div class="leftLinks">
+
+                		 <img style="margin-top:6px" src="{% static 'users/images/gmail.jpg' %}">&nbsp;<a style="color:inherit" target="_blank" href="http://mail.sdu.edu.kz/">SduMail </a></div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/globe%20red.png' %}">&nbsp;<a style="color:inherit" href="?mod=onlserv">Online Services </a></div><br><div class="leftLinkGr">Profile</div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/settings_icon.png' %}">&nbsp;<a style="color:inherit" href="?mod=settings">Settings </a></div><div class="leftLinks">
+
+                		 <img height="16" style="margin-top:3px" src="{% static 'users/images/stud_icon.png' %}">&nbsp;<a style="color:inherit" href="?mod=profile">My Profile </a></div>
+            <div>&nbsp;</div>
+
+
+			<div class="leftLinks">
+	            <img height="16" style="margin-top:3px" src="{% static 'users/images/lock_icon.png' %}">&nbsp;
+	            <a style="color:inherit" href="logout.php">[ Sign out ]</a>
+            </div>
+
+        </div></td>
+
+        <td valign="top" align="left">
+
+        <div class="ajaxMsjDiv"><span id="ajaxLoading" class="ajaxMsj" style="background-color:#F9FDFF; color:#0080C0; font-weight:bold"></span>&nbsp;</div>
+
+        <div id="divModule" style="padding-left:4px">
+
+        <div class="modTitle" style="margin-bottom: 7px">Home page</div>
+
+<div class="modContent">
+
+        <table border="0" style="border-style:none">
+
+
+        	<tbody><tr>
+
+            <td valign="top" width="120">
+
+            	<img src="{% static 'users/images/stud_photo.jpg' %}" alt="Student" height="160" style="border-radius:5%;-webkit-border-radius: 5%px;-moz-border-radius: 5%px" title="190317023">
+
+            </td>
+
+            <td>
+
+            <table class="clsTbl" style="width:auto">
+
+                <tbody><tr>
+
+                    <td class="clsTd" style="color:#555" align="right">Student № : </td>
+
+                    <td class="clsTd" nowrap="nowrap"><b>190317023</b></td>
+
+                </tr>
+
+                <tr>
+                    <td class="clsTd" style="color:#555" align="right">Name, surname : </td>
+                    <td class="clsTd" nowrap="nowrap"><b>Tabigat Karbayev</b></td>
+                </tr>
+                <tr>
+                    <td class="clsTd" style="color:#555" align="right">Father : </td>
+                    <td class="clsTd" nowrap="nowrap"><b></b></td>
+                </tr>
+				<tr>
+                    <td class="clsTd" style="color:#555" align="right">Birth date : </td>
+                    <td class="clsTd" nowrap="nowrap"><b>28-DEC-01</b></td>
+                </tr>
+                <tr>
+
+                    <td class="clsTd" style="color:#555" align="right">Program / Class : </td>
+
+                    <td class="clsTd" nowrap="nowrap"><b>Физика-Информатика-EN - 4</b></td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="clsTd" style="color:#555" align="right">Advisor : </td>
+
+                    <td class="clsTd" nowrap="nowrap"><b>Мустафа Абдулбакиоглы</b></td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="clsTd" style="color:#555" align="right">Status : </td>
+
+                    <td class="clsTd" nowrap="nowrap"><b>Studying</b></td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="clsTd" style="color:#555" align="right">
+					Balance [ <b style="font-size:11px; color:#CC4200" title="Tuition fee is calculated as semester based.">2023 - 1</b> ] :
+                    </td>
+                    <td class="clsTd" nowrap="nowrap">
+					<font color="#009900" style="font-weight:bold">No debt</font> [ 15000 KZT
+							advance payment ]                    </td>
+				</tr>
+
+
+                <tr>
+
+                    <td class="clsTd" style="color:#555" align="right">ENT exam score : </td>
+
+                    <td class="clsTd" nowrap="nowrap"><b>92</b></td>
+
+                </tr>
+
+                                <tr>
+
+                    <td class="clsTd" style="color:#555" align="right">Grant type : </td>
+
+                    <td class="clsTd" title="" nowrap="nowrap"><b>Not available</b></td>
+
+                </tr>
+                <tr>
+
+                    <td class="clsTd" style="color:#555" title="Password retrieve email" align="right">Email : </td>
+
+                    <td class="clsTd" nowrap="nowrap"><b>190317023@stu.sdu.edu.kz</b></td>
+
+                </tr>
+                <tr>
+				 	<td class="clsTd" style="color:#555" colspan="2">&nbsp;</td>
+                </tr>
+
+                <tr>
+
+                    <td class="clsTd" style="color:#555" align="right">Last login date : </td>
+
+                    <td class="clsTd" nowrap="nowrap"><b>22-DEC-23</b></td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="clsTd" style="color:#555" align="right">Last login ip : </td>
+
+                    <td class="clsTd" nowrap="nowrap"><b>95.82.126.213</b></td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="clsTd" style="color:#555" align="right">Registration date : </td>
+
+                    <td class="clsTd" nowrap="nowrap"><b>14-AUG-19</b></td>
+
+                </tr>
+
+            </tbody></table>
+
+        	</td>
+
+            </tr>
+
+        </tbody></table>
+
+        <br>
+
+
+    <!-- <div style="margin:10px 15px; color:#555; font-size:11px">Today (22 December) is birthday of <b>22</b> SDU students.    </div> -->
+
+
+
+</div>
+
+        </div>
+
+        </td>
+
+    </tr>
+
+    <tr>
+
+    	<td></td>
+
+        <td>
+
+            <div style="padding-top:100px; clear:both; text-align:right; width:100%; margin-top:10px">
+
+            <div style="padding:4px 20px; border-top:1px solid #eee; color:#999; text-align:right">Suleyman Demirel University © 2018-2019</div>
+
+            </div>
+
+        </td>
+
+    </tr>
+
+</tbody></table>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
